@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+void print()
 {
 	printf("print function\n");
 }
