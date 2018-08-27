@@ -2,7 +2,7 @@
 
 void print()
 {
-	printf("print function\n");
+	//printf("print function\n");
 }
 
 int main()
