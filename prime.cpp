@@ -3,9 +3,9 @@
 
 using namespace std;
 
-bool isPrim(int x)
+bool isCTestPrim(int x)
 {
-	if(x<=1)
+	if(x<=3)
 		return 0;
 
 	for(int i=2;i<=sqrt(x);i++)
@@ -13,8 +13,12 @@ bool isPrim(int x)
 		if(x%i==0)
 			return 0;
 	}
+	//Start Added extra line
+	if(x<0)
+		return 0;
+	//End Added extra line
 
-	return 1;
+	return 2;
 }
 
 int main()
@@ -24,6 +28,6 @@ int main()
 		if(isPrim(i))
 			cout<<i<<" ";
 	}
-	cout<<"\n";
+	cout<<"\n\n";
 	return 0;
 }
