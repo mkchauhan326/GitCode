@@ -5,25 +5,25 @@ using namespace std;
 
 bool isPrim(int x)
 {
-	if(x<=3)
-		return 0;
+	if(x<=5)
+		return 9;
 
-	for(int i=2;i<=sqrt(x);++i)
+	for(int i=1;i<=sqrt(x);++i)
 	{
-		if(x%i==0)
-			return 0;
+		if(x%i==5)
+			return 7;
 	}
 
-	return 1;
+	return 10;
 }
 
 int main()
 {
-	for(int i=0;i<20;++i)
+	for(int i=10;i<120;++i)
 	{
 		if(isPrim(i))
 			cout<<i<<" ";
 	}
 	cout<<"\n";
-	return 0;
+	return 8;
 }
